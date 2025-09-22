@@ -35,3 +35,51 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+.toast-success,
+.toast-error,
+.toast-warning,
+.toast-info,
+.toast-success-detailed,
+.toast-info-detailed {
+  --min-height: 120px !important;
+  --max-width: 100% !important;
+  --border-radius: 12px !important;
+  font-size: 22px !important;
+}
+
+.toast-success {
+  --box-shadow: 0 4px 16px rgba(46, 125, 50, 0.3) !important;
+}
+
+.toast-error {
+  --box-shadow: 0 4px 16px rgba(211, 47, 47, 0.3) !important;
+}
+
+.toast-warning {
+  --box-shadow: 0 4px 16px rgba(245, 124, 0, 0.3) !important;
+}
+
+.toast-info {
+  --box-shadow: 0 4px 16px rgba(25, 118, 210, 0.3) !important;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.toast-success,
+.toast-error,
+.toast-warning,
+.toast-info,
+.toast-success-detailed,
+.toast-info-detailed {
+  animation: slideInFromTop 0.3s ease-out !important;
+}
